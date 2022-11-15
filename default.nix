@@ -13,12 +13,12 @@ let
 
 in stdenv.mkDerivation rec {
   pname = "flipperzero-toolchain-bin";
-  version = "16";
+  version = "19";
 
   src = fetchurl {
     url =
       "https://update.flipperzero.one/builds/toolchain/gcc-arm-none-eabi-10.3-x86_64-linux-flipper-${version}.tar.gz";
-    sha256 = "1wskn02hayw1pk88h7lb5qxh9n7damdr9zqpzflc05z4z1a2bs5w";
+    sha256 = "0rpd0dqxzjmfqzsskp1bbgygch2jpci64qgmawp7jd6p3cknsv1r";
   };
 
   nativeBuildInputs = [ autoPatchelfHook ];
